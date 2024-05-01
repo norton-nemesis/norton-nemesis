@@ -3,26 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addiction medicine advocacy</title>
+    <title>4K Poster Viewer</title>
 </head>
 <body>
-    <h1>Upload Your 4K Poster</h1>
-    <input type="file" accept="image/*" id="posterInput">
-    <div id="posterContainer"></div>
-
-    <script>
-        document.getElementById('posterInput').addEventListener('change', function(event) {
-            var file = event.target.files[0];
-            var reader = new FileReader();
-
-            reader.onload = function(event) {
-                var imageUrl = event.target.result;
-                var posterContainer = document.getElementById('posterContainer');
-                posterContainer.innerHTML = '<img src="' + imageUrl + '" style="max-width: 100%; max-height: 100vh; object-fit: contain;">';
-            };
-
-            reader.readAsDataURL(file);
-        });
-    </script>
+    <h1>4K Poster Viewer</h1>
+    <div id="posterContainer">
+        <img src="harley Quinn 4k.jpeg" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
+    </div>
 </body>
 </html>
